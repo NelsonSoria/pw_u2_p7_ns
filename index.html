@@ -5,15 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
     <div id="myApp">
+        <header>
 
+        </header>
+        <nav></nav>
+        <section>
+            <h1>Hola mundo </h1>
+            <p> Con Vue.JS </p>
+            <p>{{1+2}}</p>
+            <p>{{[1,2,3,4,5,6,7,8,9]}}</p>
+            <p>{{ {nombre:"Nelson",apellido:"Soria"} }}</p>
+            <p>{{false ? 'Activo' : 'Inactivo'}}</p>
+            <p>{{1===1}}</p>
+            <p> El mensjae es: {{mensaje}}</p>
+            <p>La edad es: {{edad}}</p>
+            <p>Es igual a 30: {{edad===30}}</p>
+            
+            <button v-on:click=" cambiarMensaje">Cambiar</button>
+            
+        </section>
+        <footer></footer>
+        
     </div>
-
-
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    {{1+2}}
     <script src="./js/app.js"></script>
 </body>
 
